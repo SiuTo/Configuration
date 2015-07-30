@@ -13,6 +13,8 @@ map <F5> :w<CR>:silent make<CR>:copen<CR>:redraw!<CR>
 map <F6> :!./%<<CR>
 syntax on
 
+execute pathogen#infect()
+
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
 
@@ -29,7 +31,7 @@ endfunction
 
 let g:winManagerWindowLayout = 'NERDTree|TagList'
 let g:persistentBehaviour=0
-map wm :WMToggle<CR>
+nmap <silent> wm :if IsWinManagerVisible() <BAR> WMToggle<CR> <BAR> else <BAR> WMToggle<CR>:q<CR> endif <CR>
 
 autocmd FileType cpp set makeprg=g++\ -Wall\ -g\ -o\ %<\ %
 autocmd FileType java set makeprg=javac\ %
