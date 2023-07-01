@@ -6,3 +6,8 @@ My configuration files
 cp vimrc ~/.vimrc
 ```
 
+## Tmux
+```bash
+cp tmux.conf ~/.tmux.conf
+```
+
