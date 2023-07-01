@@ -1,13 +1,15 @@
 # Configuration
 My configuration files
 
-## VIM
-```bash
-cp vimrc ~/.vimrc
-```
-
 ## Tmux
-```bash
-cp tmux.conf ~/.tmux.conf
-```
+Config: `tmux.conf`
+
+## VIM
+Config: `vimrc`
+
+## Zsh
+Framework: [Oh My Zsh](https://ohmyz.sh)  
+Plugins:
+* [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+* [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
