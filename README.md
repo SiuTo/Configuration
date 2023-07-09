@@ -1,5 +1,9 @@
 # Configuration
-My configuration files
+My configuration files for development.  
+Install:
+```
+make
+```
 
 ## Tmux
 Config: `tmux.conf`
